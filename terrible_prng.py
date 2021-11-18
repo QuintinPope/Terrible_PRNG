@@ -1,15 +1,14 @@
 # Generate some pseudorandom numbers based on three seed values.
 import random
 
-# I will accept any pull requests that only change these four values:
-exponent = 128
-modulus = 16
-base = 25
-max_values = 30
-
 def terrible_prng(seed = None):
   # Just in case
   try:
+    # I will accept any pull requests that only change these four values:
+    exponent = 101
+    modulus = 19
+    base = 23
+    max_values = 30
     # We'll start with the randomist of numbers: 3.
     random_numbers = [3]
     # Make sure the algorithm parameters have the right types. 
